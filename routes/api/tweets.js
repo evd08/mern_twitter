@@ -41,7 +41,8 @@ router.post("/",
             text: req.body.text
         });
 
-        newTwett.save()
+        console.log(newTweet);
+        newTweet.save()
             .then(tweet => res.json(tweet));
     }
 )
